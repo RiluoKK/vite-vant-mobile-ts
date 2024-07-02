@@ -2,24 +2,40 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*":["src/*"]
+      "@/*": [
+        "src/*"
+      ]
     },
     "sourceMap": true,
     "strict": true,
     "esModuleInterop": true,
     "module": "ESNext",
-    "moduleResolution":"Bundler",
+    "moduleResolution": "Bundler",
     "skipLibCheck": true,
     "allowJs": true,
-    "lib": ["ESNext","DOM","DOM.Iterable","ScriptHost"],
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable",
+      "ScriptHost"
+    ],
     "types": [],
   },
   "include": [
     "src/App.vue",
+    "src/*.ts",
+    "src/*.d.ts",
     "src/**/*.ts",
+    "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
     "src/components.d.ts",
     "src/auto-imports.d.ts",
+    "src/types/router-meta.d.ts"
+  ],
+  "exclude": [
+    "node_modules/**",
+    "dist",
+    "**/*.js"
   ]
 }

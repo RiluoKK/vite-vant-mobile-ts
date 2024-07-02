@@ -1,15 +1,10 @@
 <template>
-  <div class="home">
-  </div>
+  <div class="home">首页</div>
 </template>
 
 <script setup lang="ts">
-import { getDictList } from "@/api/common";
 import { onMounted } from "vue";
 onMounted(() => {
-  getDictList().then((res) => {
-    console.log(res, 123321);
-  });
 });
 </script>
 
