@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*":["src/*"]
+    },
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution":"Bundler",
+    "skipLibCheck": true,
+    "allowJs": true,
+    "lib": ["ESNext","DOM","DOM.Iterable","ScriptHost"],
+    "types": [],
+  },
+  "include": [
+    "src/App.vue",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/components.d.ts",
+    "src/auto-imports.d.ts",
+  ]
+}
